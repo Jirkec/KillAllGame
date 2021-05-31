@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="#3F51B5">
+
+    <TextView
+        android:id="@+id/textw_setting_header"
+        android:layout_width="175dp"
+        android:layout_height="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:text="Game finished"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textw_total_gold"
+        android:layout_width="205dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="1dp"
+        android:text="Total gold:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textw_bonus" />
+
+    <TextView
+        android:id="@+id/textw_bonus"
+        android:layout_width="205dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="60dp"
+        android:text="Victory bonus:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textw_killed" />
+
+    <TextView
+        android:id="@+id/textw_killed"
+        android:layout_width="205dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="41dp"
+        android:text="killed minions:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textw_setting_header" />
+
+    <Button
+        android:id="@+id/btn_claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="13dp"
+        android:text="Claim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textw_total_gold" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

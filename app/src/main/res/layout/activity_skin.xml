@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SkinActivity">
+
+    <TextView
+        android:id="@+id/textw_gold_skin"
+        android:layout_width="229dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:text="100 $"
+        android:textAlignment="textEnd"
+        android:textColor="#CDDC39"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="411dp"
+        android:layout_height="566dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:onClick="backToMain"
+        android:src="@drawable/btn_close_own"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_unlockSkin"
+        android:layout_width="183dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="112dp"
+        android:background="@drawable/rectangle_unlock"
+        android:onClick="unlockSkin"
+        android:text="$700\n Unlock"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_skin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1B3280"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/btn_skin_locked" />
+
+        <ImageButton
+            android:id="@+id/btn_skin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1B3280"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/btn_skin_locked" />
+
+        <ImageButton
+            android:id="@+id/btn_skin4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1B3280"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/btn_skin_locked" />
+
+        <ImageButton
+            android:id="@+id/btn_skin5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1B3280"
+            app:srcCompat="@drawable/btn_skin_locked" />
+
+        <ImageButton
+            android:id="@+id/btn_skin7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1B3280"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/btn_skin_locked" />
+
+        <ImageButton
+            android:id="@+id/btn_skin8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1B3280"
+            app:srcCompat="@drawable/btn_skin_locked" />
+
+        <ImageButton
+            android:id="@+id/btn_skin3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1B3280"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/btn_skin_locked" />
+
+        <ImageButton
+            android:id="@+id/btn_skin6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1B3280"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/btn_skin_locked" />
+
+        <ImageButton
+            android:id="@+id/btn_skin9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1B3280"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/btn_skin_locked" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

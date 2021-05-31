@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Semestral</string>
+    <string name="level">Level</string>
+    <string name="goldCurrency">$</string>
+    <string name="victory">Victory</string>
+    <string name="defeat">Defeat</string>
+    <string name="time">Time</string>
+    <string name="reward">Reward</string>
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <Button
+        android:id="@+id/btn_skins"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="260dp"
+        android:onClick="openActivitySkin"
+        android:text="Skins"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_missions"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="58dp"
+        android:onClick="openMissions"
+        android:text="Missions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/levelText" />
+
+    <TextView
+        android:id="@+id/levelText"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif"
+        android:text="Level: 1"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_setting"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:onClick="openSetting"
+        android:src="@drawable/btn_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="116dp"
+        android:onClick="openActivityGame"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_slow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="141dp"
+        android:onClick="levelUpSlow"
+        android:text="Slow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_skins" />
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="51dp"
+        android:onClick="levelUpTime"
+        android:text="Time"
+        app:layout_constraintEnd_toStartOf="@+id/btn_income"
+        app:layout_constraintStart_toEndOf="@+id/btn_slow"
+        app:layout_constraintTop_toBottomOf="@+id/levelText" />
+
+    <Button
+        android:id="@+id/btn_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="314dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="levelUpIncome"
+        android:text="Income"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/levelText" />
+
+    <TextView
+        android:id="@+id/textw_gold"
+        android:layout_width="277dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:text="100 $"
+        android:textAlignment="textEnd"
+        android:textColor="#CDDC39"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textw_level_slow"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/level"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_slow" />
+
+    <TextView
+        android:id="@+id/textw_level_time"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/level"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/btn_income"
+        app:layout_constraintStart_toEndOf="@+id/textw_level_slow"
+        app:layout_constraintTop_toBottomOf="@+id/btn_time" />
+
+    <TextView
+        android:id="@+id/textw_level_income"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/level"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textw_level_time"
+        app:layout_constraintTop_toBottomOf="@+id/btn_income" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
